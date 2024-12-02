@@ -3,10 +3,17 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SignUpComponent } from './components/auth/sign-up/sign-up.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { SignInComponent } from './components/auth/sign-in/sign-in.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SignUpComponent,
+    HomePageComponent,
+    SignInComponent,
   ],
   imports: [
     BrowserModule,
@@ -17,4 +24,6 @@ import { AppComponent } from './app.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
