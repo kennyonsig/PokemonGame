@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SignUpComponent } from './components/auth/sign-up/sign-up.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { SignInComponent } from './components/auth/sign-in/sign-in.component';
+import { CommonModule, NgOptimizedImage } from "@angular/common";
 
 
 @NgModule({
@@ -17,7 +18,9 @@ import { SignInComponent } from './components/auth/sign-in/sign-in.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgOptimizedImage,
+    CommonModule
   ],
   providers: [
     provideClientHydration(withEventReplay())

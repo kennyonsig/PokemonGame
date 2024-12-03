@@ -2,29 +2,31 @@
   <form id="loginFormContent">
     <div class="pokemon-clicker">
       <div class="head-login">
-        <p>Pokemon Clicker</p>
+        <img src="assets/pokemon.png" alt="pokemon" height="54" width="149">
+        <img src="assets/clicker.png" alt="clicker" height="54" width="143">
       </div>
       <div class="nav-login-wrapper">
-        <a routerLink="/sign-in">Sign In</a>
-        <a routerLink="/sign-up">Sign Up</a>
+        <a routerLink="/sign-in" class="underline-hover sign">Sign In</a>
+        <a routerLink="/sign-up" class="sign active">Sign Up</a>
       </div>
     </div>
 
-    <div class="input-block">
-      <div class="login-block">
-        <p class="login-p">Login</p>
-        <input class="input-login"  placeholder="Input login">
+    <div class="input-form">
+      <div class="input-block">
+        <p>Login</p>
+        <input class="input-sign-up"  placeholder="Input login">
       </div>
-      <div class="password-block">
-        <p class="login-p">Password</p>
-        <input class="input-login" placeholder="Input password">
+      <div class="input-block">
+        <p>Password</p>
+        <input class="input-sign-up" placeholder="Input password">
       </div>
-      <div class="password-rep-block">
-        <p class="login-p">Password confirmation</p>
-        <input class="input-login"  placeholder="Input password again">
+      <div class="input-block">
+        <p>Password confirmation</p>
+        <input class="input-sign-up"  placeholder="Input password again">
       </div>
+      <button class="button-sign-in" type="submit"> Sign in</button>
     </div>
-    <button class="button-sign-in" type="submit"> Sign in</button>
+
   </form>
 </div>
 

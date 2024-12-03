@@ -1,49 +1,77 @@
-@import '../auth.scss';
-
-.login {
-  &-wrapper {
-    margin: 20%;
-    display: flex;
-    flex-direction: column;
-  }
-
+*:focus {
+  outline: none;
 }
 
-#loginFormContent {
-  background: #fff;
-  padding: 30px;
-  width: 400px;
-  position: relative;
-  box-shadow: 0 0 9px 0 rgba(0, 0, 0, .3);
-  height: 474px;
-  margin-top: 10%;
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  min-height: 100svh;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
 
-  & > * {
-    margin-bottom: 10px;
-  }
-}
-
-.input {
-  &-block {
-    display: flex;
-    flex-direction: column;
-
-    & > * {
-      margin-bottom: 10px;
-    }
-  }
-
-  &-login {
-    width: 100%;
-  }
-}
-
-.button-sign-in {
-  width: 100%;
 }
 
 .pokemon-clicker {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 54px;
+  gap: 16px;
+}
+
+.head-login {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-login-wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.active {
+  color: #0d0d0d;
+  border-bottom: 2px solid #5fbae9;
+}
+
+#loginFormContent {
+  background: #fff;
+  padding: 48px;
+  width: 400px;
+  position: relative;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.13);
+  height: 474px;
+  margin-top: 9%;
+  border-radius: 5px;
+}
+
+.input {
+  &-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-sign-up {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.25);
+  }
+
+  &-block {
+    margin-bottom: 24px;
+
+    & > *:first-child {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.button-sign-in {
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  background-color: #3d3df3;
+  color: white;
 }
